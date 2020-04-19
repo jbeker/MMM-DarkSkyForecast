@@ -20,6 +20,15 @@
       </div>
     {% endif %}
 
+    {% if config.showFeelsLike %}
+    <div class="feelslike-wrapper small dimmed">
+        <span class="feelslike-container">
+          <span class="feelslike-temperature">Feels like {{ forecast.currently.feelsLike }}</span>
+        </span>
+    </div>
+    {% endif %}
+
+
     {# -------------- Extra Current Conditions -------------- #}
     {% if config.showExtraCurrentConditions %}
       <div class="extra-current-conditions-wrapper small bright">
@@ -27,6 +36,8 @@
           <span class="high-temperature">{{ forecast.currently.tempRange.high }}</span>
           <span class="temperature-separator dimmed">/</span>
           <span class="low-temperature">{{ forecast.currently.tempRange.low }}</span>
+          <span class="temperature-separator dimmed">/</span>
+          <span class="humidity">{{ forecast.currently.humidity }}<sup>&nbsp;<i class="wi wi-humidity humidityIcon"></i></sup></span>
         </span>
 
         {% if config.showPrecipitation %}
@@ -60,7 +71,6 @@
           </span>
 
         {% endif %}
-
 
       </div>
     {% endif %}

@@ -26,6 +26,10 @@
   color: #6FC4F5;
 }
 
+.MMM-DarkSkyForecast .forecast-container .forecast-item .feelslike-container {
+  color: #AAA;
+}
+
 .MMM-DarkSkyForecast .accumulation:before {
   content: " ";
 }
@@ -62,6 +66,12 @@
   margin: 0 -15px;
 }
 
+.MMM-DarkSkyForecast .feelslike-wrapper {
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  word-wrap: normal;
+}
 
 /* Inline icons */
 .MMM-DarkSkyForecast .inline-icon,
@@ -158,7 +168,8 @@
 
 
 .MMM-DarkSkyForecast .wrapper.tiled .forecast-container .forecast-item .wind-speed,
-.MMM-DarkSkyForecast .wrapper.tiled .forecast-container .forecast-item .wind-gusts {
+.MMM-DarkSkyForecast .wrapper.tiled .forecast-container .forecast-item .wind-gusts,
+.MMM-DarkSkyForecast .wrapper.tiled .forecast-container .forecast-item .humidity {
   display: inline-block;
   white-space: nowrap;
 }
@@ -176,7 +187,8 @@
 
 
 .MMM-DarkSkyForecast .wrapper.tiled .forecast-container .forecast-item .precipitation-container,
-.MMM-DarkSkyForecast .wrapper.tiled .forecast-container .forecast-item .wind-container {
+.MMM-DarkSkyForecast .wrapper.tiled .forecast-container .forecast-item .wind-container,
+.MMM-DarkSkyForecast .wrapper.tiled .forecast-container .forecast-item .humidity-container {
   font-size: 17px;
   line-height: 1.5;
 }
