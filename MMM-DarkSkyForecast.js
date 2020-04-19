@@ -97,7 +97,7 @@ Module.register("MMM-DarkSkyForecast", {
     },
 
     getStyles: function () {
-        return ["MMM-DarkSkyForecast.css"];
+        return ["MMM-DarkSkyForecast.css", "weather-icons.css"];
     },
 
     getTemplate: function () {
